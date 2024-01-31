@@ -15,6 +15,7 @@ const Rightbar = ({ user }) => {
     currentUser.followings.includes(user?._id)
   );
   console.log(currentUser);
+  console.log(user);
 
   useEffect(() => {
     const getFriends = async () => {
@@ -29,7 +30,8 @@ const Rightbar = ({ user }) => {
         }
       }
     };
-    getFriends();
+    setFollowed();
+    setFollowed(currentUser.followings.includes(user?._id));
   }, [user]);
 
   const handleClick = async (e) => {

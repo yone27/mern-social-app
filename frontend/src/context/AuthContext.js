@@ -1,6 +1,11 @@
 import { createContext, useReducer } from "react";
 import AuthReducer from "./AuthReducer";
 
+// const INITIAL_STATE = {
+//   user: {},
+//   isFetching: false,
+//   error: false,
+// };
 const INITIAL_STATE = {
   user: {
     _id: "65a862794c9b553b1403222b",
